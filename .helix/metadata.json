@@ -1,1 +1,9 @@
-[{"instance_id":"handshake","task_title":"handshake","problem_statement":"","hints":"","repo":"handshake","repo_path_or_url":"handshake","FAIL_TO_PASS":"","PASS_TO_PASS":"","language":"handshake","docker_file":"handshake","run_script":"handshake","task_type":"handshake","task_category":"handshake","repo_category":"handshake","version":"handshake","container_mem":"handshake","container_memswap":"handshake","container_network_needed":"handshake"}]
+[
+  {
+    "problem_statement": "Implement synchronous compile-time evaluation for `comptime` blocks in the Civet compiler: evaluate blocks at compile time in an isolated realm, JSON-serialize the result (acyclic, JSON-serializable), and splice into output. No outer scope; sync only. Fix `replaceNode` premature return and parent handling. Fix Predicate typing in pattern matching when the first argument is not a typed pattern. Wire through parser, traversal, CLI, playground, and unplugin as in upstream #1180. First commit: feature only; tests in a separate commit.",
+    "problem_statement_variant": "Add compile-time blocks that run while compiling and embed results in emitted code; fix tree-rewrite bugs and pattern guard typing in the same area.",
+    "hints": "New: source/parser/comptime.civet, source/parser/helper.civet. Touch: source/parser.hera, source/parser/block.civet, source/parser/declaration.civet, source/parser/function.civet, source/parser/lib.civet, source/parser/pattern-matching.civet, source/parser/traversal.civet, source/parser/types.civet, source/parser/util.civet, source/cli.civet, source/config.civet, source/main.civet, build/esbuild.civet. F2P: test/comptime.civet, test/switch.civet (new case).",
+    "FAIL_TO_PASS": "test/comptime.civet,test/switch.civet",
+    "PASS_TO_PASS": "test/if.civet,test/assignment.civet,test/function.civet"
+  }
+]
